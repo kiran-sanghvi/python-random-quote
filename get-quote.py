@@ -6,9 +6,9 @@ def notMain():
   quotes = f.readlines()
   f.close()
 
-  randomNum = random.randint(0, 13)
+  randomNum = random.randint(0, len(quotes))
 
-  print(quotes[randomNum])
+  print(quotes[randomNum].rstrip())
 
 if __name__== "__main__":
   notMain()
