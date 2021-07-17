@@ -1,11 +1,14 @@
+import random
+
 def notMain():
-  print("Keep it logically awesome.")
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
+  f = open("quotes.txt")
+  quotes = f.readlines()
+  f.close()
 
-  #print(quotes)
+  randomNum = random.randint(0, 13)
+
+  print(quotes[randomNum])
 
 if __name__== "__main__":
   notMain()
